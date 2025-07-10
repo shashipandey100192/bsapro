@@ -1,27 +1,31 @@
 
-import myimg from './images/img1.jpg';
+import { FaUserTie } from "react-icons/fa";
+import { Fragment } from "react/jsx-runtime";
+import { applist } from "./appcontrols/Appcontrol";
 
-function Welcomepage()
-{
-    return(
-        <h1 className="page">this is welcome page</h1>
+function Welcomepage() {
+    return (
+        <Fragment>
+            <div className="text-center" style={{ width: 900 }}>
+                <h1 className="text-center">App Lists</h1>
+                <hr />
+            </div>
+            <div className="applist">
+                {applist.map((a) => {
+                    return (
+                        <a href="" className="shadow bg-light border">
+                            <h1> <FaUserTie /></h1>
+                            <p>{a.appname}</p>
+                        </a>
+                    )
+                })}
+
+
+            </div>
+        </Fragment>
     )
 }
 export default Welcomepage
-
-
-
-export function Projecttitle1()
-{
-    return(
-        <div>
-        <h1 style={{color:'red',fontSize:80}} >this is the project title</h1>
-        <img src={myimg} alt="sdfh"/>
-        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO0wQCxXS1avpnMwtn07I3vGD6HWYUghyrAw&s'/>
-        <h1 style={{color:'green',fontSize:80}}> this is update file</h1>
-        </div>
-    )
-}
 
 
 
