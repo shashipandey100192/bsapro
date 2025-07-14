@@ -1,8 +1,8 @@
-*
+/* *
 {
     margin:0 auto;
     padding:0;
-}
+} */
 .page
 {
     width: 100%;
@@ -15,6 +15,7 @@
     height: auto;
     display: flex;
     flex-wrap: wrap;
+    margin:0 auto;
 }
 .applist a
 {
@@ -29,4 +30,11 @@
 .applist p
 {
     text-transform: capitalize;
+}
+
+@media(max-width:500px)
+{
+    .applist{
+        width:100%;
+    }
 }
