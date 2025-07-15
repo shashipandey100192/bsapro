@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 function Userlogin() {
     return (
         <div className='container'>
-            <div className='row'>
+            <div className='row justify-content-center'>
                 <div className='col-md-5 bg-light shadow p-5'>
                     <div className='container-fluid'>
                         <div className='row'>
