@@ -11,6 +11,8 @@ import Apperror from './apps/sharecomponents/Apperror';
 import Mainpage from './apps/appmodules/dashboard/Mainpage';
 import Homepage from './apps/appmodules/dashboard/Homepage';
 import Productpage from './apps/appmodules/dashboard/Productpage';
+import Prentpage from './apps/appmodules/dashboard/props/Prentpage';
+import Mychartpage from './apps/appmodules/dashboard/Mychartpage';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -25,6 +27,9 @@ root.render(
           <Route path='landingpage' element={<Mainpage/>}>
               <Route path='' element={<Homepage/>}></Route>
               <Route path='productlist' element={<Productpage/>}></Route>
+              <Route path='dashboard' element={<Prentpage/>}></Route>
+              <Route path='mychart' element={<Mychartpage/>}></Route>
+              
           </Route>
 
 

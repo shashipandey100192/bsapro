@@ -3,19 +3,19 @@ import { Link } from 'react-router-dom'
 
 function Appsidebar() {
   return (
-    <div className="d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary"> <a href="/" className="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"> <span className="fs-4">Sidebar</span> </a> <hr /> <ul className="nav nav-pills flex-column mb-auto"> <li className="nav-item"> <a href="#" className="nav-link active" aria-current="page">
+    <div className="d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary"> <Link to="/" className="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"> <span className="fs-4">Sidebar</span> </Link> <hr /> <ul className="nav nav-pills flex-column mb-auto"> <li className="nav-item"> <Link to="#" className="nav-link active" aria-current="page">
       Home
-    </a> </li> <li> <a href="#" className="nav-link link-body-emphasis">
+    </Link> </li> <li> <Link to="dashboard" className="nav-link link-body-emphasis">
       Dashboard
-    </a> </li> <li> <a href="#" className="nav-link link-body-emphasis">
-      Orders
-    </a> </li>
+    </Link> </li> <li> <Link to="mychart" className="nav-link link-body-emphasis">
+      Charts
+    </Link> </li>
       <li>
         <Link to="productlist" className="nav-link link-body-emphasis"> Products</Link>
       </li>
-      <li> <a href="#" className="nav-link link-body-emphasis">
+      <li> <Link to="#" className="nav-link link-body-emphasis">
         Customers
-      </a> </li> </ul> <hr /> <div className="dropdown"> <a href="#" className="d-flex align-items-center link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"> <img src="https://github.com/mdo.png" alt="" width="32" height="32" className="rounded-circle me-2" /> <strong>mdo</strong> </a> <ul className="dropdown-menu text-small shadow"> <li><a className="dropdown-item" href="#">New project...</a></li> <li><a className="dropdown-item" href="#">Settings</a></li> <li><a className="dropdown-item" href="#">Profile</a></li> <li><hr className="dropdown-divider" /></li> <li><a className="dropdown-item" href="#">Sign out</a></li> </ul> </div> </div>
+      </Link> </li> </ul> <hr /> <div className="dropdown"> <Link to="#" className="d-flex align-items-center link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"> <img src="https://github.com/mdo.png" alt="" width="32" height="32" className="rounded-circle me-2" /> <strong>mdo</strong> </Link> <ul className="dropdown-menu text-small shadow"> <li><Link className="dropdown-item" to="#">New project...</Link></li> <li><Link className="dropdown-item" to="#">Settings</Link></li> <li><Link className="dropdown-item" to="#">Profile</Link></li> <li><hr className="dropdown-divider" /></li> <li><Link className="dropdown-item" to="#">Sign out</Link></li> </ul> </div> </div>
   )
 }
 
