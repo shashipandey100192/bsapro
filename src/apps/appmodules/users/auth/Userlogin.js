@@ -65,14 +65,14 @@ const formvalidation = ()=>{
                             <div className='col-md-12'>
                                 <div class="mb-3">
                                     <label class="form-label"><MdOutlineEmail /> Email address</label>
-                                    <input type="email" class="form-control" value={email} onInput={updateemail}/>
+                                    <input type="email" class="form-control" value={email} onInput={updateemail} placeholder='admin'/>
                                 </div>
                             </div>
 
                             <div className='col-md-12'>
                                 <div class="mb-3">
                                     <label class="form-label"><TbLockPassword /> Password</label>
-                                    <input type="password" class="form-control" value={pass} onInput={updatepass}/>
+                                    <input type="password" class="form-control" value={pass} onInput={updatepass} pass="1234"/>
                                 </div>
                             </div>
 
