@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
+import { Link } from 'react-router-dom'
 
 function Productpage() {
 
@@ -27,7 +28,7 @@ useEffect(()=>{
                                 <div class="card-body">
                                     <h5 class="card-title">{c.title}</h5>
                                     <p class="card-text">{c.description}</p>
-                                    <a href="#" class="btn btn-primary">{c.id}</a>
+                                    <Link to={`detailspage/`+c.id} class="btn btn-primary">View more</Link>
                                     
                                 </div>
                             </div>
