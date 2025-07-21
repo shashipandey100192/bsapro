@@ -1,8 +1,8 @@
 import React, { Fragment } from 'react'
+import { Outlet } from 'react-router-dom'
 import Appheader from '../../sharecomponents/Appheader'
 import Appsidebar from '../../sharecomponents/Appsidebar'
-import Homepage from './Homepage'
-import { Outlet } from 'react-router-dom'
+
 
 function Mainpage() {
   return (

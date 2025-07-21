@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import axios from 'axios'
 import { Link } from 'react-router-dom'
+import axios from 'axios'
+
 
 function Productpage() {
 
@@ -8,14 +9,13 @@ function Productpage() {
 
     const myapi = () => {
         axios.get('https://dummyjson.com/products').then((d) => {
-            console.log(d.data.products);
-            updateitem(d.data.products)
+            updateitem(d.data.products);
         })
     }
 
-useEffect(()=>{
-    myapi();
-},[])
+    useEffect(() => {
+        myapi();
+    }, [])
 
     return (
         <div className='container-fluid'>
@@ -28,8 +28,8 @@ useEffect(()=>{
                                 <div class="card-body">
                                     <h5 class="card-title">{c.title}</h5>
                                     <p class="card-text">{c.description}</p>
-                                    <Link to={`detailspage/`+c.id} class="btn btn-primary">View more</Link>
-                                    
+                                    <Link to={`detailspage/` + c.id} class="btn btn-primary">View more</Link>
+
                                 </div>
                             </div>
                         </div>
