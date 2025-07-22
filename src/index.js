@@ -19,7 +19,6 @@ import Productdetailspage from './apps/appmodules/dashboard/Productdetailspage';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-
       <BrowserRouter>
         <Routes>
           <Route path='' element={<Welcomepage/>}></Route>
@@ -31,12 +30,8 @@ root.render(
               <Route path='productlist/detailspage/:id' element={<Productdetailspage/>}></Route>
               <Route path='dashboard' element={<Prentpage/>}></Route>
               <Route path='mychart' element={<Mychartpage/>}></Route>
-              
           </Route>
-
-
           <Route path='*' element={<Apperror/>}></Route>
-        
         </Routes>
       </BrowserRouter>
 

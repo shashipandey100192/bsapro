@@ -18,7 +18,7 @@ const [item, updateitem] = useState({})
 
 useEffect(()=>{
     myapi();
-},[])
+},[]);
 
 const addtocard = (id)=>{
     console.log(id);

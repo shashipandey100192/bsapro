@@ -36,7 +36,7 @@ const formvalidation = ()=>{
             // alert("welcome");
             toast.success("login successfully",{autoClose: 2000,theme: "dark"});
             // mynav("/landingpage");    
-            setInterval(()=>{
+            setTimeout(()=>{
                 mynav("/landingpage");
             },2000)
         }

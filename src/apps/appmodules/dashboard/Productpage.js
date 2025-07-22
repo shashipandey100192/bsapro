@@ -15,7 +15,7 @@ function Productpage() {
 
     useEffect(() => {
         myapi();
-    }, [])
+    },[])
 
     return (
         <div className='container-fluid'>

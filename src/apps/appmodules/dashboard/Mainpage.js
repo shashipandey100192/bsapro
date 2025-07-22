@@ -19,8 +19,6 @@ function Mainpage() {
 
                 </div>
             </div>
-
-
    </Fragment>
   )
 }
